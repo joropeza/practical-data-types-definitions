@@ -1,5 +1,5 @@
-import LETTER from './definitions/letter';
-import WORD from './definitions/word';
+import LETTER from './src/definitions/letter';
+import WORD from './src/definitions/word';
 
 export default {
     LETTER,
