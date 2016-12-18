@@ -18,6 +18,7 @@ const LETTER = {
         'a word',
     ],
     regex: '^[A-Za-z]{1}$',
+    specificity: 1,
 };
 
 export default LETTER;

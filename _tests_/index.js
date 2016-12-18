@@ -12,8 +12,14 @@ describe('(index)', function () {
         expect(typeof practicalDataTypesDefinitions).to.equal('object');
     });
     describe('tests', function () {
-        _.forEach(practicalDataTypesDefinitions, dataType => {
-            describe(`for dataType {$dataType.ECMAScriptPrimitive}`, function () {
+        _.forOwn(practicalDataTypesDefinitions, (dataType, key) => {
+            describe('for dataType ' + key, function () {
+                it('must have a regex, positive and negativeTests', function () {
+                    expect(dataType.regex).to.be.ok;
+                    expect(dataType.positiveTests).to.be.ok;
+                    expect(dataType.positiveTests.length).to.be.ok;
+                    expect(dataType.negativeTests.length).to.be.ok;
+                });
                 _.forEach(dataType.positiveTests, positiveTest => {
                     it('should pass the regex test for ' + positiveTest, function () {
                         const regex = new RegExp(dataType.regex);
