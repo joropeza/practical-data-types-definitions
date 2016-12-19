@@ -4,7 +4,7 @@
   "description": "JS Definitions for Practical Data Types Project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./_tests_/index.js --require babel-core/register"
+    "test": "mocha ./_tests_/definitions/index.js --require babel-core/register"
   },
   "repository": {
     "type": "git",

@@ -4,7 +4,7 @@ prefer-template */
 import { expect } from 'chai';
 import _ from 'lodash';
 
-import practicalDataTypesDefinitions from '../index';
+import practicalDataTypesDefinitions from '../../src/definitions/index';
 
 describe('(index)', function () {
     it('should be an object', function () {
