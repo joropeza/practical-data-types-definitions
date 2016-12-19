@@ -1,3 +1,5 @@
+import * as preparations from '../../preparations';
+
 const TICKER_SYMBOL = {
     ECMAScriptPrimitive: 'string',
     ANSIDataType: 'VARCHAR',
@@ -20,6 +22,7 @@ const TICKER_SYMBOL = {
     ],
     regex: '^[A-Z_]+$',
     specificity: 100,
+    preps: [preparations.trim],
 };
 
 export default TICKER_SYMBOL;

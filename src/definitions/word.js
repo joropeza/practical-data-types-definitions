@@ -1,3 +1,5 @@
+import * as preparations from '../preparations';
+
 const WORD = {
     ECMAScriptPrimitive: 'string',
     ANSIDataType: 'VARCHAR',
@@ -18,6 +20,7 @@ const WORD = {
         '123',
     ],
     regex: '^[a-zA-Z_]+$',
+    preps: [preparations.trim],
     specificity: 1,
 };
 

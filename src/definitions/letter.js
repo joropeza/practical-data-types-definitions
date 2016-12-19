@@ -1,3 +1,5 @@
+import * as preparations from '../preparations';
+
 const LETTER = {
     ECMAScriptPrimitive: 'string',
     ANSIDataType: 'CHAR',
@@ -7,9 +9,13 @@ const LETTER = {
         'A',
         'c',
         'Z',
+        'A ',
+        ' A',
+        ' A ',
     ],
     negativeTests: [
         '',
+        ' ',
         '0',
         'aa',
         'BB',
@@ -18,6 +24,7 @@ const LETTER = {
         'a word',
     ],
     regex: '^[A-Za-z]{1}$',
+    preps: [preparations.trim],
     specificity: 1,
 };
 
