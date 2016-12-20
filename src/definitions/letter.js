@@ -1,4 +1,5 @@
 import * as preparations from '../preparations';
+import * as tests from '../tests';
 
 const LETTER = {
     ECMAScriptPrimitive: 'string',
@@ -25,6 +26,7 @@ const LETTER = {
     ],
     regex: '^[A-Za-z]{1}$',
     preps: [preparations.trim],
+    tests: [tests.regex],
     specificity: 1,
 };
 

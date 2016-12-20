@@ -1,4 +1,5 @@
 import * as preparations from '../../preparations';
+import * as tests from '../../tests';
 
 const TICKER_SYMBOL = {
     ECMAScriptPrimitive: 'string',
@@ -23,6 +24,7 @@ const TICKER_SYMBOL = {
     regex: '^[A-Z_]+$',
     specificity: 100,
     preps: [preparations.trim],
+    tests: [tests.regex],
 };
 
 export default TICKER_SYMBOL;

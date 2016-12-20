@@ -1,4 +1,5 @@
 import * as preparations from '../preparations';
+import * as tests from '../tests';
 
 const WORD = {
     ECMAScriptPrimitive: 'string',
@@ -21,6 +22,7 @@ const WORD = {
     ],
     regex: '^[a-zA-Z_]+$',
     preps: [preparations.trim],
+    tests: [tests.regex],
     specificity: 1,
 };
 
