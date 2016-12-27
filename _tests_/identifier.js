@@ -17,4 +17,44 @@ describe('(identifier)', function () {
 
         expect(output).to.deep.equal(expectedOutput);
     });
+    it('should identify a single capital letter', function () {
+        const input = 'A';
+        const expectedOutput = ['LETTER', 'WORD', 'TICKER_SYMBOL'];
+
+        const output = identifier(input);
+
+        expect(output).to.deep.equal(expectedOutput);
+    });
+    it('should identify a short lowercase word', function () {
+        const input = 'as';
+        const expectedOutput = ['WORD'];
+
+        const output = identifier(input);
+
+        expect(output).to.deep.equal(expectedOutput);
+    });
+    it('should identify a short word', function () {
+        const input = 'As';
+        const expectedOutput = ['WORD', 'NAME'];
+
+        const output = identifier(input);
+
+        expect(output).to.deep.equal(expectedOutput);
+    });
+    it('should identify a short all caps word', function () {
+        const input = 'AS';
+        const expectedOutput = ['WORD', 'TICKER_SYMBOL'];
+
+        const output = identifier(input);
+
+        expect(output).to.deep.equal(expectedOutput);
+    });
+    it('should identify a name', function () {
+        const input = 'Southeast Asia';
+        const expectedOutput = ['NAME'];
+
+        const output = identifier(input);
+
+        expect(output).to.deep.equal(expectedOutput);
+    });
 });
