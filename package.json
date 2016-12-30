@@ -21,6 +21,7 @@
     "chai": "^3.5.0",
     "child-process-promise": "^2.2.0",
     "colors": "^1.1.2",
+    "countryjs": "^1.5.6",
     "lodash": "^4.14.0",
     "rimraf-promise": "^2.0.0"
   },

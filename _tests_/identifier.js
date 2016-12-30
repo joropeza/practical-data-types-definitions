@@ -26,7 +26,7 @@ describe('(identifier)', function () {
         expect(output).to.deep.equal(expectedOutput);
     });
     it('should identify a short lowercase word', function () {
-        const input = 'as';
+        const input = 'assamoa';
         const expectedOutput = ['WORD'];
 
         const output = identifier(input);
@@ -34,7 +34,7 @@ describe('(identifier)', function () {
         expect(output).to.deep.equal(expectedOutput);
     });
     it('should identify a short word', function () {
-        const input = 'As';
+        const input = 'Astral';
         const expectedOutput = ['WORD', 'NAME'];
 
         const output = identifier(input);
@@ -42,7 +42,7 @@ describe('(identifier)', function () {
         expect(output).to.deep.equal(expectedOutput);
     });
     it('should identify a short all caps word', function () {
-        const input = 'AS';
+        const input = 'ASAMOA';
         const expectedOutput = ['WORD', 'TICKER_SYMBOL'];
 
         const output = identifier(input);
@@ -52,6 +52,14 @@ describe('(identifier)', function () {
     it('should identify a name', function () {
         const input = 'Southeast Asia';
         const expectedOutput = ['NAME'];
+
+        const output = identifier(input);
+
+        expect(output).to.deep.equal(expectedOutput);
+    });
+    it('should identify a country name', function () {
+        const input = 'Germany';
+        const expectedOutput = ['WORD', 'NAME', 'COUNTRY'];
 
         const output = identifier(input);
 
