@@ -51,7 +51,7 @@ describe('(identifier)', function () {
     });
     it('should identify a name', function () {
         const input = 'Southeast Asia';
-        const expectedOutput = ['NAME'];
+        const expectedOutput = ['NAME', 'SUBREGION'];
 
         const output = identifier(input);
 

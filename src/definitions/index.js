@@ -5,6 +5,7 @@ import TICKER_SYMBOL from './strings/tickerSymbol';
 import NAME from './strings/name';
 
 import COUNTRY from './places/country';
+import SUBREGION from './places/subregion';
 
 export default {
     LETTER,
@@ -12,4 +13,5 @@ export default {
     TICKER_SYMBOL,
     NAME,
     COUNTRY,
+    SUBREGION,
 };

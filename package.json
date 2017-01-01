@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/joropeza/practical-data-types-definitions#readme",
   "dependencies": {
+    "all-the-regions": "^1.0.0",
     "chai": "^3.5.0",
     "child-process-promise": "^2.2.0",
     "colors": "^1.1.2",
