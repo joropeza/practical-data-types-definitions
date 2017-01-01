@@ -58,7 +58,7 @@ describe('(identifier)', function () {
         expect(output).to.deep.equal(expectedOutput);
     });
     it('should identify a country name', function () {
-        const input = 'Germany';
+        const input = 'Thailand';
         const expectedOutput = ['WORD', 'NAME', 'COUNTRY'];
 
         const output = identifier(input);

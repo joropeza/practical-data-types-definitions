@@ -5,7 +5,8 @@
   "main": "./dist/index.js",
   "scripts": {
     "test": "mocha ./_tests_/* --recursive --require babel-core/register",
-    "build": "node ./tools/build-lib.js"
+    "build": "node ./tools/build-lib.js",
+    "lint": "eslint \"./src/**/*.js\""
   },
   "repository": {
     "type": "git",
