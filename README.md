@@ -1,2 +1,2 @@
 # practical-data-types-definitions
-JS Definitions for Practical Data Types Project
+JS definitions and identifier logic for Practical Data Types Project

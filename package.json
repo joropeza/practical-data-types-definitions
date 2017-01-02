@@ -1,7 +1,7 @@
 {
-  "name": "practical-data-types-definitions",
+  "name": "practical-data-types",
   "version": "0.1.0",
-  "description": "JS Definitions for Practical Data Types Project",
+  "description": "JS definitions and indentifier logic for Practical Data Types Project",
   "main": "./dist/index.js",
   "scripts": {
     "test": "mocha ./_tests_/* --recursive --require babel-core/register",
