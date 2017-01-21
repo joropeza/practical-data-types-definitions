@@ -1,5 +1,5 @@
 import countryLibrary from 'countryjs';
-import { subregions } from 'all-the-regions';
+import { subregions, regions } from 'all-the-regions';
 
 export const regex = (input, test) => {
     const regexTest = new RegExp(test);
@@ -9,3 +9,4 @@ export const regex = (input, test) => {
 export const country = (input) => !!countryLibrary.info(input, 'name');
 
 export const subregion = (input) => !!subregions[input];
+export const region = (input) => !!regions[input];

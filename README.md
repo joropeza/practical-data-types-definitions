@@ -9,4 +9,4 @@ That's the design anyway... we'll see if it holds true ;)
 
 ## Usage
 
-import { identifier, definitions } from practical-data-types;
+import { identifier, definitions } from 'practical-data-types';

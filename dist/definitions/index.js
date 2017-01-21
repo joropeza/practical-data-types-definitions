@@ -28,6 +28,10 @@ var _subregion = require('./places/subregion');
 
 var _subregion2 = _interopRequireDefault(_subregion);
 
+var _region = require('./places/region');
+
+var _region2 = _interopRequireDefault(_region);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
@@ -36,5 +40,6 @@ exports.default = {
     TICKER_SYMBOL: _tickerSymbol2.default,
     NAME: _name2.default,
     COUNTRY: _country2.default,
-    SUBREGION: _subregion2.default
+    SUBREGION: _subregion2.default,
+    REGION: _region2.default
 };

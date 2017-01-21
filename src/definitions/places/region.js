@@ -1,14 +1,14 @@
-import { subregionSynonyms } from '../../preparations/places';
+import * as preparations from '../../preparations';
 import * as tests from '../../tests';
 
-const SUBREGION = {
+const REGION = {
     ECMAScriptPrimitive: 'string',
     ANSIDataType: 'CHAR',
     wikipediaLink: 'https://en.wikipedia.org/wiki/United_Nations_geoscheme',
     positiveTests: [
-        'Southeast Asia',
-        'North America',
-        'Australia and New Zealand',
+        'Europe',
+        'Americas',
+        'Oceania',
     ],
     negativeTests: [
         '',
@@ -19,11 +19,12 @@ const SUBREGION = {
         'word',
         'words with spaces',
         'a word',
+        'Southeast Asia',
     ],
     regex: '[a-zA-Z]{2,}',
-    preps: [subregionSynonyms],
-    tests: [tests.regex, tests.subregion],
+    preps: [preparations.trim],
+    tests: [tests.regex, tests.region],
     specificity: 1,
 };
 
-export default SUBREGION;
+export default REGION;

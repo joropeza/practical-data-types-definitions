@@ -4,7 +4,9 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _places = require('../../preparations/places');
+var _preparations = require('../../preparations');
+
+var preparations = _interopRequireWildcard(_preparations);
 
 var _tests = require('../../tests');
 
@@ -12,16 +14,16 @@ var tests = _interopRequireWildcard(_tests);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-var SUBREGION = {
+var REGION = {
     ECMAScriptPrimitive: 'string',
     ANSIDataType: 'CHAR',
     wikipediaLink: 'https://en.wikipedia.org/wiki/United_Nations_geoscheme',
-    positiveTests: ['Southeast Asia', 'North America', 'Australia and New Zealand'],
-    negativeTests: ['', ' ', '0', 'aa', 'BBBBB', 'word', 'words with spaces', 'a word'],
+    positiveTests: ['Europe', 'Americas', 'Oceania'],
+    negativeTests: ['', ' ', '0', 'aa', 'BBBBB', 'word', 'words with spaces', 'a word', 'Southeast Asia'],
     regex: '[a-zA-Z]{2,}',
-    preps: [_places.subregionSynonyms],
-    tests: [tests.regex, tests.subregion],
+    preps: [preparations.trim],
+    tests: [tests.regex, tests.region],
     specificity: 1
 };
 
-exports.default = SUBREGION;
+exports.default = REGION;

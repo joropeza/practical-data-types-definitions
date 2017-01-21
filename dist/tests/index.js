@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-exports.subregion = exports.country = exports.regex = undefined;
+exports.region = exports.subregion = exports.country = exports.regex = undefined;
 
 var _countryjs = require('countryjs');
 
@@ -24,4 +24,7 @@ var country = exports.country = function country(input) {
 
 var subregion = exports.subregion = function subregion(input) {
     return !!_allTheRegions.subregions[input];
+};
+var region = exports.region = function region(input) {
+    return !!_allTheRegions.regions[input];
 };
