@@ -24,7 +24,7 @@ const COUNTRY = {
     regex: '[a-zA-Z]{2,}',
     preps: [preparations.trim],
     tests: [tests.regex, tests.country],
-    specificity: 1,
+    specificity: 1000,
 };
 
 export default COUNTRY;

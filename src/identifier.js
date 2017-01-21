@@ -11,10 +11,10 @@ const identifier = input =>
             test(preppedInput, dataType.regex));
 
         if (_.every(testResults)) {
-            identifiedDataTypes.push(key);
+            identifiedDataTypes[key] = { specificity: dataType.specificity };
         }
 
         return identifiedDataTypes;
-    }, []);
+    }, {});
 
 export default identifier;
