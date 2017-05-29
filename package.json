@@ -1,6 +1,6 @@
 {
   "name": "practical-data-types",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "JS definitions and indentifier logic for Practical Data Types Project",
   "main": "./dist/index.js",
   "scripts": {
