@@ -8,6 +8,8 @@ import COUNTRY from './places/country';
 import SUBREGION from './places/subregion';
 import REGION from './places/region';
 
+import DATE from './timespans/date';
+
 export default {
     LETTER,
     WORD,
@@ -16,4 +18,5 @@ export default {
     COUNTRY,
     SUBREGION,
     REGION,
+    DATE,
 };

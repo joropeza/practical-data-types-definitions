@@ -25,11 +25,11 @@ var identifier = function identifier(input) {
         });
 
         if (_lodash2.default.every(testResults)) {
-            identifiedDataTypes.push(key);
+            identifiedDataTypes[key] = { specificity: dataType.specificity };
         }
 
         return identifiedDataTypes;
-    }, []);
+    }, {});
 };
 
 exports.default = identifier;

@@ -14,16 +14,17 @@ var tests = _interopRequireWildcard(_tests);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
-var REGION = {
+var DATE = {
     ECMAScriptPrimitive: 'string',
-    ANSIDataType: 'CHAR',
-    wikipediaLink: 'https://en.wikipedia.org/wiki/United_Nations_geoscheme',
-    positiveTests: ['Europe', 'Americas', 'Oceania'],
-    negativeTests: ['', ' ', '0', 'aa', 'BBBBB', 'word', 'words with spaces', 'a word', 'Southeast Asia'],
-    regex: '[a-zA-Z]{2,}',
+    ANSIDataType: 'DATETIME',
+    wikipediaLink: 'https://en.wikipedia.org/wiki/Word',
+    dbPediaKey: 'Ticker_symbol',
+    positiveTests: ['05/05/2017', '31/01/2017', '01/31/2017'],
+    negativeTests: ['', '0', 'aa', 'word', 'words with spaces', 'a word', 12345, '14/14/2017'],
+    regex: '.{4,}',
+    specificity: 1,
     preps: [preparations.trim],
-    tests: [tests.regex, tests.region],
-    specificity: 1000
+    tests: [tests.date]
 };
 
-exports.default = REGION;
+exports.default = DATE;

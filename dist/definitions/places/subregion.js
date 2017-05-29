@@ -21,7 +21,7 @@ var SUBREGION = {
     regex: '[a-zA-Z]{2,}',
     preps: [_places.subregionSynonyms],
     tests: [tests.regex, tests.subregion],
-    specificity: 1
+    specificity: 1000
 };
 
 exports.default = SUBREGION;

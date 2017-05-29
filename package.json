@@ -1,6 +1,6 @@
 {
   "name": "practical-data-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JS definitions and indentifier logic for Practical Data Types Project",
   "main": "./dist/index.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "colors": "^1.1.2",
     "countryjs": "^1.5.6",
     "lodash": "^4.14.0",
+    "moment": "^2.18.1",
     "rimraf-promise": "^2.0.0"
   },
   "devDependencies": {

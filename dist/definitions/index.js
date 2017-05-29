@@ -32,6 +32,10 @@ var _region = require('./places/region');
 
 var _region2 = _interopRequireDefault(_region);
 
+var _date = require('./timespans/date');
+
+var _date2 = _interopRequireDefault(_date);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
@@ -41,5 +45,6 @@ exports.default = {
     NAME: _name2.default,
     COUNTRY: _country2.default,
     SUBREGION: _subregion2.default,
-    REGION: _region2.default
+    REGION: _region2.default,
+    DATE: _date2.default
 };
