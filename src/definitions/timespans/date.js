@@ -4,8 +4,8 @@ import * as tests from '../../tests';
 const DATE = {
     ECMAScriptPrimitive: 'string',
     ANSIDataType: 'DATETIME',
-    wikipediaLink: 'https://en.wikipedia.org/wiki/Word',
-    dbPediaKey: 'Ticker_symbol',
+    wikipediaLink: 'https://en.wikipedia.org/wiki/Date',
+    dbPediaKey: 'Date',
     positiveTests: [
         '05/05/2017',
         '31/01/2017',

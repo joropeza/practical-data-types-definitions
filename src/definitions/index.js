@@ -9,6 +9,8 @@ import SUBREGION from './places/subregion';
 import REGION from './places/region';
 
 import DATE from './timespans/date';
+import YEAR from './timespans/year';
+import YEAR_IN_LATE_MODERNITY from './timespans/yearSince1900'
 
 export default {
     LETTER,
@@ -19,4 +21,6 @@ export default {
     SUBREGION,
     REGION,
     DATE,
+    YEAR,
+    YEAR_IN_LATE_MODERNITY,
 };

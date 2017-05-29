@@ -36,6 +36,14 @@ var _date = require('./timespans/date');
 
 var _date2 = _interopRequireDefault(_date);
 
+var _year = require('./timespans/year');
+
+var _year2 = _interopRequireDefault(_year);
+
+var _yearSince = require('./timespans/yearSince1900');
+
+var _yearSince2 = _interopRequireDefault(_yearSince);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
@@ -46,5 +54,7 @@ exports.default = {
     COUNTRY: _country2.default,
     SUBREGION: _subregion2.default,
     REGION: _region2.default,
-    DATE: _date2.default
+    DATE: _date2.default,
+    YEAR: _year2.default,
+    YEAR_IN_LATE_MODERNITY: _yearSince2.default
 };
